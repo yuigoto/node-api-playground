@@ -1,0 +1,59 @@
+{
+  "name": "yx-node-api-playground",
+  "version": "0.0.1",
+  "description": "Um playground para testar desenvolvimento de API usando Node, Express e MongoDB (Mongoose)",
+  "homepage": "https://github.com/yuigoto/yx-node-api-playground#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/server.js",
+    "build": "rollup -c",
+    "dev": "nodemon --exec npm run start",
+    "test": "nodemon --exec mocha"
+  },
+  "keywords": [
+    "javascript",
+    "json",
+    "node",
+    "mongodb",
+    "express",
+    "api",
+    "playground"
+  ],
+  "author": "Fabio Y. Goto <lab@yuiti.com.br>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuigoto/yx-node-api-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuigoto/yx-node-api-playground/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.9.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3",
+    "npm-run-all": "^4.1.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-includepaths": "^0.2.2",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babelrc-rollup": "^3.0.0",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.16"
+  }
+}
